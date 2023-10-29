@@ -52,11 +52,11 @@ You can contribute to this project in several ways:
 
 ## Code of Conduct
 
-This project has adopted a Code of Conduct that we expect project participants to adhere to. Please see [CODE_OF_CONDUCT.md](https://chat.openai.com/c/CODE_OF_CONDUCT.md) for details.
+This project has adopted a Code of Conduct that we expect project participants to adhere to. Please see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the MIT License. See the [LICENSE.md](https://chat.openai.com/c/LICENSE.md) for details.
+By contributing to this project, you agree that your contributions will be licensed under the MIT License. See the [LICENSE](LICENSE) for details.
 
 ## Contact
 
