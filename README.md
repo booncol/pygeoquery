@@ -25,7 +25,7 @@ pip install pygeoquery
 
 Before using this library, ensure that each document in the searched Firestore collection includes a field called **"geohash"** containing a geohash value generated from the geographical coordinates. This geohash field is essential for the library to perform accurate geospatial queries.
 
-![Document preview](document_preview.png)  
+![Document preview](https://github.com/booncol/pygeoquery/blob/main/document_preview.png?raw=true)  
 
 To generate geohashes, you can use Python libraries such as:
 
