@@ -21,6 +21,18 @@ You can install the library using pip:
 pip install pygeoquery
 ```
 
+## Prerequisites
+
+Before using this library, ensure that each document in the searched Firestore collection includes a field called **"geohash"** containing a geohash value generated from the geographical coordinates. This geohash field is essential for the library to perform accurate geospatial queries.
+
+![Document preview](document_preview.png)  
+
+To generate geohashes, you can use Python libraries such as:
+
+- [pygeohash](https://pypi.org/project/pygeohash/): Provides functions for decoding and encoding geohashes.
+- [geohashr](https://pypi.org/project/geohashr/): Just another Python geohashing library.
+
+
 ## Usage
 ```python
 from firebase_admin import credentials, firestore
@@ -62,10 +74,10 @@ for document in result:
 This project is inspired by the [geoflutterfire_plus](https://github.com/KosukeSaigusa/geoflutterfire_plus) Flutter module by [Kosuke Saigusa](https://github.com/kosukesaigusa), which provides similar geospatial querying functionality for Firestore databases in the Flutter framework.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/booncol/pygeoquery/blob/main/LICENSE) file for details.
 
 ## Contributing
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on my code of conduct, and the process for submitting pull requests to me.
+Please read [CONTRIBUTING.md](https://github.com/booncol/pygeoquery/blob/main/CONTRIBUTING.md) for details on my code of conduct, and the process for submitting pull requests to me.
 
 ## Contact
 If you have questions or need assistance, feel free to contact me.

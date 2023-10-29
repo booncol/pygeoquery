@@ -52,11 +52,11 @@ You can contribute to this project in several ways:
 
 ## Code of Conduct
 
-This project has adopted a Code of Conduct that we expect project participants to adhere to. Please see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
+This project has adopted a Code of Conduct that we expect project participants to adhere to. Please see [CODE_OF_CONDUCT.md](https://github.com/booncol/pygeoquery/blob/main/CODE_OF_CONDUCT.md) for details.
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the MIT License. See the [LICENSE](LICENSE) for details.
+By contributing to this project, you agree that your contributions will be licensed under the MIT License. See the [LICENSE](https://github.com/booncol/pygeoquery/blob/main/LICENSE) for details.
 
 ## Contact
 
