@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="pygeoquery",
-    version="0.1.3",
+    version="0.1.4",
     description="Geoqueries on Firestore Database for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,5 +23,17 @@ setup(
         "geohashr==1.3.1",
         "geopy==2.4.0",
         "google-cloud-firestore==2.13.0",
+        "asyncio==3.4.3",
+    ],
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Database",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
+        "Typing :: Typed",
+        "Natural Language :: English"
     ]
 )
