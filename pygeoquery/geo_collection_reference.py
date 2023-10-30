@@ -6,7 +6,7 @@ from typing import Callable, Iterable, Optional
 
 from google.cloud.firestore_v1 import CollectionReference, GeoPoint, DocumentSnapshot
 
-from pygeoquery import GeoPointFromCallback
+from pygeoquery.geo_document_snapshot import GeoPointFromCallback
 from pygeoquery.geo_math import geohashes_in_radius
 from pygeoquery.geo_query import filtered_snapshots, geo_query
 

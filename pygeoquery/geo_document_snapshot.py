@@ -1,10 +1,10 @@
 from dataclasses import dataclass
+from typing import Callable
 
 from geopy.distance import geodesic as gd
 from google.cloud.firestore_v1 import DocumentSnapshot, GeoPoint
 
-from pygeoquery import GeoPointFromCallback
-
+GeoPointFromCallback = Callable[[dict], GeoPoint]
 
 @dataclass(frozen=True)
 class GeoDocumentSnapshot:
@@ -28,6 +28,9 @@ class GeoDocumentSnapshot:
 
         data = snapshot.to_dict()
         geopoint = geopoint_from(data)
+        if geopoint is None:
+            return None
+
         distance = gd((center.latitude, center.longitude), (geopoint.latitude, geopoint.longitude)).km
 
         return GeoDocumentSnapshot(snapshot=snapshot, distance=distance)

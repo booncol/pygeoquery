@@ -2,7 +2,7 @@ from typing import Iterable
 
 from google.cloud.firestore_v1 import GeoPoint
 
-from pygeoquery import GeoPointFromCallback, GeoDocumentSnapshot
+from pygeoquery.geo_document_snapshot import GeoDocumentSnapshot, GeoPointFromCallback
 from pygeoquery.geo_math import DETECTION_RANGE_BUFFER
 
 
@@ -36,8 +36,8 @@ def filtered_snapshots(futures: list[Iterable],
     """
     merged = [snapshot for values in futures for snapshot in values]
     snapshots = [GeoDocumentSnapshot.nullable(snap, geopoint_from, center) for snap in merged]
-    filtered = [snapshot for snapshot in snapshots if
-                not strict or snapshot.distance <= radius * DETECTION_RANGE_BUFFER]
+    filtered = [snapshot for snapshot in snapshots
+                if not strict or snapshot.distance <= radius * DETECTION_RANGE_BUFFER]
     filtered.sort(key=lambda x: x.distance)
 
     return [snap.snapshot.to_dict() for snap in filtered]

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.6] - 2023-10-30
+
+### Fixed
+
+- Fixed build issues.
+
 ## [0.1.4] - 2023-10-30
 
 ### Added
