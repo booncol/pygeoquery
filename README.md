@@ -1,7 +1,7 @@
 # pygeoquery
 
 [![PyPI package](https://img.shields.io/badge/pip%20install-pygeoquery-brightgreen)](https://pypi.org/project/pygeoquery/)
-[![Version](https://img.shields.io/pypi/v/pygeoquery)](https://pypi.org/project/pygeoquery/0.1.0/)
+[![Version](https://img.shields.io/pypi/v/pygeoquery)](https://pypi.org/project/pygeoquery/)
 [![License](https://img.shields.io/github/license/booncol/pygeoquery)](https://github.com/booncol/pygeoquery/blob/main/LICENSE)
 
 Perform geospatial queries on a Firestore database with ease.
